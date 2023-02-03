@@ -228,6 +228,8 @@ color: #000000;
     margin-left: 104px;
     font-size: 20px;
     font-weight: 400;
+     text-align: justify;
+    justify-content: center;
 }
 
 .prompt-8{
