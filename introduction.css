@@ -1,289 +1,438 @@
-.header{
-    font-family: 'Archivo Black', sans-serif;
-    font-size: 50px;
-    z-index: -100;
-    position: relative;
+
+.trial{
+position: absolute;
+width: 1556px;
+height: 379px;
+left: 0px;
+top: 0px;
 }
 
+/* not able to figure out media queries ^^ */
 
 
+.prompt-1-2-3{
+display: grid;
+grid-template-columns: 372px 372px 372px;
+gap: 50px;
+margin-left: 90%;
+margin-top:40%;
 
-.body{
-    background: linear-gradient(rgb(183, 255, 0), white) no-repeat;
-    background-attachment: fixed;
-    font-family: "pragmatica", sans-serif;
-    font-weight: 200;
-    font-style: normal;
+
+font-family: 'Anonymous Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 20px;
+text-align: justify;
+justify-content: center;
+
+color: #000000;
+}
+
+/* not able to figure out media queries */
+ 
+/* @media screen and (max-width=500px){
+    .prompt-1-2-3{
+        display: grid;
+        grid-template-rows: 167px 130px 126px;
+        gap: 50px;
+       margin-left: 10%;
+       margin-top:40%;
     }
+} */
+
+/* @media (min-width=500px){
+    .prompt-1-2-3{
+        grid-template-columns: 167px 130px 126px; 
+         gap: 50px;
+       margin-left: 10%;
+       margin-top:40%;
+    }
+    
+} */
+
+/* @media (min-width=1000px){
+    .prompt-1-2-3{
+        margin-left: 40%;
+    }
+} */
 
 .i-am{
-    display:grid;
-    grid-template-columns: 1fr;
-    /* font-family: 'Bebas Neue', cursive; */
-    font-family: 'Archivo Black', sans-serif;
-    font-size: 70px;
-    /* margin-left:50%; */
-    }
-
-.i-am-center{
-    display:grid;
-    grid-template-columns: 1fr;
-    font-family: 'Archivo Black', sans-serif;
-    font-size: 50px;
-     margin-left: 40%;
-}    
-
-.i-am-text-1{
-    display:grid;
-    grid-template-columns: 1fr;
-    font-family: 'Archivo Black', sans-serif;
-    font-size: 50px;
-    margin-left: 30%; 
-    text-align: justify;
-}
-.i-am-text-2{
-    display:grid;
-    grid-template-columns: 1fr;
-    font-family: 'Archivo Black', sans-serif;
-    font-size: 30px;
-    /* margin-left: 30%;  */
-    text-align: justify;
+    display: grid;
+    grid-template-columns: 242px 374px 210px 352px;
+    font-family: 'Bokor', cursive;
+    font-size: 128px;
+    margin-left: 15%;
+    margin-top: 1%;
 }
 
 .nervous{
-    max-height: 500px;
-    max-width: 1000px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    font-size: 40px;
-    font-family: 'Archivo Black', sans-serif;
-    border-radius: 30px;
-    /* border-style: solid;
-    border-width: 5px; */
-    box-shadow: 0 25px 55px rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
     text-align: center;
-   
+    font-weight: bolder;
+    animation: blinking 3s infinite;
+    font-size: 128px;
+    font-family: 'Bokor', cursive;
 }
 
-.excited{
-    max-height: 500px;
-    max-width: 1000px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color:rgb(255, 255, 255);
-    font-size: 40px;
-    font-family: 'Archivo Black', sans-serif;
-    border-radius: 30px;
-    /* border-style: solid;
-    border-width: 5px; */
-    text-align: center;
-    /* box-shadow: 0 0 25px rgb(255, 255, 255); */
-    box-shadow: 0 25px 55px rgb(255, 255, 255);
-}
 
-@media (min-width=768px){
-    .i-am{
-        grid-template-columns: 1fr 1fr 1fr;
+@keyframes blinking{
+    0% {
+        color: rgb(255, 255, 255);
     }
+    47% {
+        color: rgb(120, 120, 120);
+    }
+    /* 62% {
+        color: transparent;
+    }
+    97% {
+        color: transparent; */
+    }
+    100% {
+        color: rgb(0, 0, 0);
+    }
+
+.but{
+    font-family: 'Bokor', cursive;
+    font-size: 128px;
+    margin-left: 40px;
+
+}
+
+.text{
+    font-family: 'Anonymous Pro';
+    font-style: normal;
+    position: absolute;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    margin-left: 104px;
+}
+
+.future{
+    display: grid;
+    grid-template-columns: 350px 400px 400px;
+    margin-left: 15%;
+    margin-top: 20%;
+    font-family: 'Bokor', cursive;
+    font-size: 48px;
+    /* gap: 10px;; */
+}
+
+
+.branding{
+   background-color:#a1a1a1;
+   transform: rotate(-20deg);
+   z-index: -10;
+   text-align: center;
+   box-shadow: 0 0 45px rgb(42, 42, 42);
+}
+
+.web-design{
+    background-color:#676767;
+    text-align: center;
+    z-index: -1;
+    box-shadow: 0 0 45px rgb(42, 42, 42);
+
 }
 
 .content{
-        max-height: 500px;
-        max-width: 400px;
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        background-color:rgb(255, 255, 255);
-        font-size: 20px;
-        font-family: 'Archivo Black', sans-serif;
-        border-radius: 30px;
-        /* border-style: solid;
-        border-width: 5px; */
-        text-align: center;
-        /* box-shadow: 0 0 25px rgb(255, 255, 255); */
-        box-shadow: 0 25px 55px rgb(255, 255, 255);
-    }
-
-.prompt-1{
-    background-color: rgb(0, 0, 0);
-    transform: rotate(-5deg);
-    margin-left: 40%;
-    color: white;
-    padding: 10px;
-}
-.prompt-2{
-    background-color: rgb(255, 51, 0);
-    transform: rotate(10deg);
-    color: white;
-    padding: 10px;
-}
-
-.prompt-3{
-    background-color: rgb(106, 0, 255);
-    transform: rotate(deg);
-    z-index: -1000;
-    margin-right: 40%;
-    color: white;
-    padding: 10px;
+    background-color:#bbb9b9;
+    transform: rotate(15deg);
+    padding-top: 2%;
+    text-align: center;
+    font-size: 40px;
+    box-shadow: 0 0 45px rgb(42, 42, 42);
 }
 
 .prompt-4{
-    background-color: rgb(0, 0, 0);
-    transform: rotate(-5deg);
-    margin-left: 40%;
-    color: white;
-    padding: 10px;
-}
-
-.prompt-5{
-    background-color: rgb(255, 60, 0);
-    transform: rotate(15deg);
-    color: white;
-    padding: 10px;
-    margin-top: 10px;
-}
-
-.prompt-6{
-   display:grid;
-   /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; */
-}
-
-@media (min-width=768px){
-    .prompt-6{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    
-    }
-}
-
-.prompt-11 {
+    font-family: 'Anonymous Pro';
+    position: absolute;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    margin-left: 104px;
     display: grid;
-    grid-template-columns: 1fr;
-    margin-left: 20%;
-    row-gap: 20px;
-    width: 460px;
+    grid-template-columns: 590px 580px;
+    gap: 64px;
+    text-align: justify;
+    justify-content: center;
+    margin-top: 90px;
+}
+
+.food{
+    display: grid;
+    grid-template-columns: 201px 201px 201px 201px 201px 201px;
+    font-family: 'Anonymous Pro';
+    position: absolute;
+    font-style: normal;
+    margin-left: 104px;
+    padding-top: 30%;
+
+}
+
+.prompt-7-a{
+    font-family: 'Anonymous Pro';
+    position: absolute;
+    font-style: normal;  
+    margin-top: 40%;
+    margin-left: 104px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.links{
+    font-family: 'Bokor', cursive;
+    font-style: normal;
+    display:grid;
+    grid-template-columns: 310px 310px 310px ;
+    gap: 10%;
+
+    width: 1164px;
+    color: #000000;
+    padding:5%;
+    text-align: center;
+
+    margin-top: 50%;
+    margin-left: 104px;
+
+}
+
+.button-1{
+    background-color: #9292924b;
+    font-size: 30px;
+    color: #ffffff;
+    padding:10%;
+    border-radius: 10px; 
+    cursor: pointer;
+    box-shadow: 0 0 15px rgb(42, 42, 42);
+    font-family: 'Bokor', cursive;
+}
+.links :nth-child(2){
+    background-color: #9292924b;
+    color: #000000;
+    font-size: 30px;
+    padding:10%;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgb(42, 42, 42);
+    font-family: 'Bokor', cursive;
+}
+.links :nth-child(3){
+    background-color: #9292924b;
+    color: #000000;
+    font-size: 30px;
+    padding:10%;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgb(42, 42, 42);
+    font-family: 'Bokor', cursive;
+}
+
+.prompt-7-b{
+    font-family: 'Anonymous Pro';
+    position: absolute;
+    font-style: normal;  
+    /* margin-top: 10%; */
+    margin-left: 104px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.prompt-8{
+    display: grid;
+    grid-template-columns:600px 600px ;
+    height: 400px;
+    width:400px;
+    margin-left: 104px;
+    margin-top: 20%;
+    
+
+    font-family: 'Anonymous Pro';
+    position: absolute;
+    font-style: normal;  
+    /* margin-top: 10%; */
+    margin-left: 104px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.prompt-8-text{
+    margin-top: 40%;
+    text-align: justify;
+    justify-content: center;
+}
+
+.prompt-9{
+    font-family: 'Anonymous Pro';
+    position: absolute;
+    font-style: normal;  
+    margin-top: 90%;
+    margin-left: 104px;
+    font-size: 20px;
+    font-weight: 400;
+
+    width: 1209px;
+}
+
+.prompt-9-list{
+    display: grid;
+    grid-template-columns: 372px 372px 372px;
+    gap: 50px;
+    margin-left: 89%;
+    margin-top: 103%;
+    
+    font-family: 'Anonymous Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: justify;
+    justify-content: center;
+    
+    color: #000000;
+}
+
+.prompt-11{
+    font-family: 'Anonymous Pro';
+    position: absolute;
+    font-style: normal;  
+    margin-top: -7%;
+    margin-left: 104px;
+    font-size: 20px;
+    font-weight: 400;
+
+    width: 1209px;
+}
+
+.prompt-11-list{
+    display: grid;
+    grid-template-columns: 242px 242px 242px 242px 242px;
+    margin-left: 80%;
+    /* margin-top: 40%; */
+
+    font-family: 'Anonymous Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: justify;
+    justify-content: center;
+    
+    color: #000000;
+}
+
+.alt-indie{
+    color: red;
+}
+
+.RnB{
+color: blue;
+}
+
+.pop{
+    color: rgb(255, 0, 174);
+}
+
+.neo-soul{
+    color: orangered;
+}
+
+.rap{
+    color: rgb(46, 70, 30);
+}
+
+.spotify{
+    border: solid;
+    border-color: #00000000;
+    background-color: #00000000;
+    
+    margin-left: 85%;
     margin-top: 10%;
 }
 
-.tame-impala {
-    display: flex;
-    flex-direction: column;
-    max-height: 200px;
-    max-width: 100%;
-    background-color: rgb(255, 0, 0);
-    overflow-x: hidden;
-    overflow-y: auto;
-    color: white;
-    flex-shrink: 0;
-    width: 100%;
-    font-family: 'Unbounded', cursive;
-    font-size: 50px;
-    padding-left: 5%;
-    padding-right: 5%;
-    text-align: center;
-    border-radius: 20px;
-    box-shadow: 0 0 45px rgb(255, 0, 0);
-}
-
-.daniel-caesar{
-    display: flex;
-    flex-direction: column;
-    max-height: 200px;
-    max-width: 100%;
-    background-color: rgb(0, 8, 255);
-    overflow-x: hidden;
-    overflow-y: auto;
-    color: white;
-    flex-shrink: 0;
-    width: 100%;
-    font-family: 'Prata', serif;
-    font-size: 50px;
-    padding-left: 5%;
-    padding-right: 5%;
-    text-align: center;
-    border-radius: 20px;
-    box-shadow: 0 0 45px rgb(0, 8, 255);
-}
-.doja-cat{
-    display: flex;
-    flex-direction: column;
-    max-height: 200px;
-    max-width: 100%;
-    background-color: rgb(255, 0, 221);
-    overflow-x: hidden;
-    overflow-y: auto;
-    color: white;
-    flex-shrink: 0;
-    width: 100%;
-    font-family: 'Press Start 2P', cursive;
-    font-size: 50px;
-    padding-left: 5%;
-    padding-right: 5%;
-    text-align: center;
-    border-radius: 20px;
-    box-shadow: 0 0 45px rgb(255, 0, 221);
-}
-.frank-ocean {
-    display: flex;
-    flex-direction: column;
-    max-height: 200px;
-    max-width: 100%;
-    background-color:  rgb(255, 132, 0);
-    overflow-x: hidden;
-    overflow-y: auto;
-    color: rgb(255, 255, 255);
-    flex-shrink: 0;
-    width: 100%;
-    font-family: 'Playfair Display', serif;
-    font-size: 50px;
-    padding-left: 5%;
-    padding-right: 5%;
-    text-align: center;
-    border-radius: 20px;
-    box-shadow: 0 0 45px  rgb(255, 132, 0);
-}
-.kendrick-lamar {
-    display: flex;
-    flex-direction: column;
-    max-height: 200px;
-    max-width: 100%;
-    background-color: rgb(43, 72, 34);
-    overflow-x: hidden;
-    overflow-y: auto;
-    color: white;
-    flex-shrink: 0;
-    width: 100%;
-    font-family: 'Libre Bodoni', serif;
-    font-size: 50px;
-    padding-left: 5%;
-    padding-right: 5%;
-    text-align: center;
-    border-radius: 20px;
-    box-shadow: 0 0 45px rgb(43, 72, 34);
-}
-
 .my-box{
-    background: rgb(0, 0, 0);
-background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(255,255,255,1) 100%);
-margin-left: 150px; 
+    margin-left: 10%;
+    margin-top: 10%;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(139,139,139,1) 48%, rgba(255,255,255,1) 100%);
+    border: solid;
+    border-color: #00000000;
 }
 
-.cross-tape-6 {
-    transform: rotate(-25deg) scale(150%);
-    background-color: rgb(255, 0, 174);
-    color: black;
-    font-family: 'Bebas Neue', cursive;
-    max-width: fit-content;
-    padding: 2%;
-    padding-left: 2%;
-    padding-right: 2%;
-    border-radius: 15px;
+.my-box-2{
+    margin-left: 10%;
+    margin-top: 10%;
+    background: rgb(255,255,255);
+background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(128,128,128,1) 50%, rgba(0,0,0,1) 100%);
+    border: solid;
+    border-color: #00000000;
+    }
+
+.prompt-14{
+    
+    font-family: 'Anonymous Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: justify;
+    justify-content: center;
+    width: 1209px;
+    margin-left: 104px;
+    margin-top: 10%;
+
+    color: #000000;
+}    
+.prompt-15{
+    
+    font-family: 'Anonymous Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: justify;
+    justify-content: center;
+    width: 1209px;
+    margin-left: 104px;
+    margin-top: 10%;
+
+    color: #000000;
+} 
+.prompt-16{
+    
+    font-family: 'Anonymous Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: justify;
+    justify-content: center;
+    width: 1209px;
+    margin-left: 104px;
+    margin-top: 10%;
+
+    color: #000000;
+} 
+
+.footer{
+    background-color: #676767;
+    margin-top: 10%;
+    padding: 10%;
     text-align: center;
+    font-family: 'Anonymous Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    /* text-align: justify; */
+    justify-content: center;
+    width: fit-content;
+    margin-left: 104px;
+    margin-top: 10%;
+
+    color: #000000;
+
 }
