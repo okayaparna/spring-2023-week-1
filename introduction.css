@@ -3,20 +3,29 @@
 position: absolute;
 width: 1556px;
 height: 379px;
+
 left: 0px;
 top: 0px;
 }
 
-/* not able to figure out media queries ^^ */
+/* why are my media quesries not working media queries ^^ */
+
+/* @media (max-width=400px){
+.trial{
+    width: 379px;
+    height: 91px;
+}
+} */
 
 
 .prompt-1-2-3{
 display: grid;
-grid-template-columns: 372px 372px 372px;
+
 gap: 50px;
-margin-left: 90%;
+margin-left: 1%;
 margin-top:40%;
 
+grid-template-columns: 372px 372px 372px;
 
 font-family: 'Anonymous Pro';
 font-style: normal;
@@ -29,33 +38,13 @@ justify-content: center;
 color: #000000;
 }
 
-/* not able to figure out media queries */
- 
-/* @media screen and (max-width=500px){
+@media (max-width=400px){
     .prompt-1-2-3{
-        display: grid;
-        grid-template-rows: 167px 130px 126px;
-        gap: 50px;
-       margin-left: 10%;
-       margin-top:40%;
-    }
-} */
 
-/* @media (min-width=500px){
-    .prompt-1-2-3{
-        grid-template-columns: 167px 130px 126px; 
-         gap: 50px;
-       margin-left: 10%;
-       margin-top:40%;
+        grid-template-columns: 264px;
+        grid-template-rows: 167px 167px 167px;
     }
-    
-} */
-
-/* @media (min-width=1000px){
-    .prompt-1-2-3{
-        margin-left: 40%;
     }
-} */
 
 .i-am{
     display: grid;
