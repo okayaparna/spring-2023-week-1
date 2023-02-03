@@ -22,8 +22,8 @@ top: 0px;
 display: grid;
 
 gap: 50px;
-margin-left: 1%;
 margin-left: 104px;
+margin-top:40%;
 
 grid-template-columns: 372px 372px 372px;
 
